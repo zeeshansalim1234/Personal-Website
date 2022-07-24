@@ -13,8 +13,6 @@
 
 		<link rel="stylesheet" href="css/style.css" />
     
-    
-
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZXJBVDf7R4JqmSpopVPoduIGWx1IwpBM"></script>
@@ -69,9 +67,8 @@
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#header">Home</a></li>
               <li><a href="#about">About</a></li>              
-              <li><a href="#portfolio">Awards</a></li>
-			  <li><a href="#experience">Experience</a></li>
-			  <li><a href="#info">Skills</a></li>
+			  <li><a href="#experience">Projects</a></li>
+        <li><a href="#portfolio">Awards</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div> <!-- /.navbar-collapse -->
@@ -137,17 +134,23 @@
         <script type="text/javascript">
         var dataHeader = [
                             {
+                              bigImage :"images/activision.png",
+                              title : "SDE Intern",
+                              brief: "Activision (May 2022-Present)",
+							                author : "Activision"
+                            },
+                            {
+                              bigImage :"images/pachira.png",
+                              title : "Machine Learning Intern",
+                              brief: "Pachira Social Enterprise Inc. (May 2021-Aug 2021)",
+                              author : "Pachira Social Enterprise Inc."
+                            }, 
+                            {
                               bigImage :"images/plane.jpg",
                               title : "Software Project Lead",
                               brief: "Schulich AeroDesign Club (Aug 2020-Present)",
 							                author : "Schulich AeroDesign Club"
                             },
-                            {
-                              bigImage :"images/pachira.png",
-                              title : "Summer Software Intern",
-                              brief: "Pachira Social Enterprise Inc. (May 2021-Aug 2021)",
-                              author : "Pachira Social Enterprise Inc."
-                            }, 
                             {
                               bigImage :"images/research.jpg",
                               title : "Research Assistant",
@@ -181,6 +184,13 @@
                               author : "Hip, Hack, [Array]!"
                             },
 
+                            {
+                              bigImage :"images/hyl.png",
+                              title : "Hackathon Runner-Up",
+                              brief: "Hack Your Learning (February 2022)",
+                              author : "Hack Your Learning"
+                            },
+
                             
                            
                         ],
@@ -199,7 +209,6 @@
     <section id="about" class="light">
       <header class="title">
         <h2>About <span>Me</span></h2>
-        <p>I am a third year software engineering student at the University of Calgary, Canada who has a passion for programming with a soft spot for Machine Learning and Data Science. </p>
       </header>
 
       <div class="container">
@@ -214,29 +223,35 @@
 
           <div class="col-sm-6">
             <div class="section-content">
+
+
               <div class="about-content left animated" data-animate="fadeInLeft">
-                <div class="about-icon"><i class="fa fa-desktop"></i></div>
+                <div class="about-icon"><i class="fa fa-book-open"></i></div>
                 <div class="about-detail">
-                  <h4>Programming Skills</h4>
-                  <p>I am an avid programmer in languages like Python, C/C++, Java, Processing, HTML, and CSS with a basic background of databases (MySqL) and MIPS assembly. I have a strong suit in automation and optimization </p>
+                  <h4>Education</h4>
+                  <p>I am a senior year software engineering student at University of Calgary, Canada <br><br>
+                    Engineering Clubs: Code the Change YYC, Schulich AeroDesign, Schulich DinoBytes, Schulich Ignite
+                  </p>
                 </div>
               </div>
 
               <div class="about-content left animated" data-animate="fadeInLeft">
-                <div class="about-icon"><i class="fa fa-group"></i></div>
+                <div class="about-icon"><i class="fa fa-address-card"></i></div>
                 <div class="about-detail">
-                  <h4>Team Management</h4>
-                  <p>Developed great team management skills through particpation in numerous team competitions like hackathons, olympiads, exhibitions both as a team leader and a member </p>
+                  <h4>Internships</h4>
+                  <p>I am currently interning as a Software Developer Intern at Activision - Demonware (2022) <br><br> Previously interned as a Machine Learning Intern at Pachira Social Enterprise Inc. (2021)</p>
                 </div>
               </div>
 
               <div class="about-content left animated" data-animate="fadeInLeft">
-                <div class="about-icon"><i class="fa fa-clock-o"></i></div>
+                <div class="about-icon"><i class="fa fa-code"></i></div>
                 <div class="about-detail">
-                  <h4>Time management</h4>
-                  <p>I am good at assessing which tasks take priority and develop strict time tables which helps me stay organized and up-to-date</p>
+                  <h4>Hackathons</h4>
+                  <p>I love participating in hackathons and have particpated at 10+ Hackathons since 2020. <br><br> Hackathons won: <br> - Hack Your Learning (2022) <br> - Hip, Hack, [Array]! (2021) </p>
                 </div>
               </div>
+
+
             </div>
           </div>
         </div> <!-- /.row table-row -->
@@ -247,154 +262,7 @@
   
 	
 	
-	    <!-- AWARDS -->
-
-    <section id="portfolio" class="dark">
-      <header class="title">
-        <h2><span>Awards</span></h2>
-        <p>Some of my notable awards and honours recieved over the years</p>
-      </header>
-
-      <div class="container-fluid">
-        <div class="row">
-          <ul id="filters" class="list-inline">
-            <li data-filter="all" class="filter">All</li>
-            <li data-filter=".branding" class="filter">Scholarship</li> 
-            <li data-filter=".graphic" class="filter">Academic</li> 
-            <li data-filter=".printing" class="filter">Competition</li> 
-          </ul>
-        </div>
-
-        <div class="row">
-          <div class="container-portfolio">
-            <!-- PORTFOLIO OBJECT -->
-            <script type="text/javascript">
-            var portfolio = [
-                    {
-                      category : "branding",
-                      image : "images/scholar.PNG",
-                      title : "PURE Research Award",
-                      link : "#none",
-                      text : "$6000"
-                    },
-                    {
-                      category : "branding",
-                      image : "images/scholar.PNG",
-                      title : "Presidents Admission Award",
-                      link : "#none",
-                      text : "$5000"
-                    },
-                     {
-                      category : "branding",
-                      image : "images/scholar.PNG",
-                      title : "Jordie & Robert Jordan Award",
-                      link : "#none",
-                      text : "$6920"
-                    },
-                    {
-                      category : "branding",
-                      image : "images/scholar.PNG",
-                      title : "Tution Reinvestment Bursary",
-                      link : "#none",
-                      text : "$4500"
-                    },
-                    {
-                      category : "branding",
-                      image : "images/scholar.PNG",
-                      title : "Student Peer Assistance Bursary",
-                      link : "#none",
-                      text : "$1500"
-                    },
-                    {
-                      category : "printing",
-                      image : "images/hackathon.jpg",
-                      title : "",
-                      link : "#none",
-                      text : "1st place hackathon ($3000)"
-                    },
-                    {
-                      category : "graphic",
-                      image : "images/young.PNG",
-                      title : "",
-                      link : "#none",
-                      text : "95% in CBSE grade 12 Board exams"
-                    },
-                    {
-                      category : "printing",
-                      image : "images/technovanza.PNG",
-                      title : "",
-                      link : "#none",
-                      text : "1st Place Technovanza Robotics Competiton"
-                    },
-                    {
-                      category : "printing",
-                      image : "images/asia.PNG",
-                      title : "",
-                      link : "#none",
-                      text : "Qualified to national round in math olympiad"
-                    },
-                    {
-                      category : "printing",
-                      image : "images/maha.PNG",
-                      title : "",
-                      link : "#none",
-                      text : "1st Place Math Olympiad"
-                    },
-                    {
-                      category : "graphic",
-                      image : "images/top.PNG",
-                      title : "",
-                      link : "#none",
-                      text : "School Topper Grade 12"
-                    },
-                    {
-                      category : "graphic",
-                      image : "images/super.PNG",
-                      title : "",
-                      link : "#none",
-                      text : "grade 12 Comp Sci Subject topper (100/100)"
-                    },
-                    {
-                      category : "graphic",
-                      image : "images/grade10.PNG",
-                      title : "",
-                      link : "#none",
-                      text : "Grade 10 Regional Topper"
-                    },
-                    {
-                      category : "graphic",
-                      image : "images/board10.PNG",
-                      title : "",
-                      link : "#none",
-                      text : "10 CGPA in grade 10"
-                    },    
-                    {
-                      category : "graphic",
-                      image : "images/grade9.PNG",
-                      title : "",
-                      link : "#none",
-                      text : "Grade 9 School topper"
-                    },       
-                    {
-                      category : "graphic",
-                      image : "images/grade8.PNG",
-                      title : "",
-                      link : "#none",
-                      text : "Grade 8 School topper"
-                    },
-                  
-            
-                    
-                    
-                ];
-            </script>
-          </div>
-          
-        </div>
-        <br><br><br><br><br><br>
-      </div>
-    </section>
-
+	
     
     <!--Experience-->
 
@@ -406,8 +274,8 @@
       
       <header class="title">
         <br><br><br><br>
-        <h2>My <span>Projects</span></h2>
-        <p>These are some of my personal projects developed for Hackathons, Student Clubs and Self Exploration</p>
+        <h2>Hackathon <span>Projects</span></h2>
+        <p>These are my personal projects developed for various InternationalHackathons</p>
       </header>
       
    <div class="container1">
@@ -418,8 +286,8 @@
         <div class="fourth">
         <div class="content">
           <br>
-          <img src="images/researchgram.gif" alt=""  width="260" height = "170">
-           <h3></h3>
+          <img src="images/researchgram.gif" alt=""  width="260" height = "150">
+           <h3>ResearchGram (1st Place - 3000$)</h3>
         </div>
       </div>
       </div>
@@ -434,36 +302,32 @@
     </div>
 
 
-
-      <div class="card">
-        <div class="face face1" >
-          <div class="fifth">
-          <div class="content">
+    <div class="card">
+      <div class="face face1">
+        <div class="fifth">
+        <div class="content">
+          <br>
+          <img src="images/scholared.gif" alt=""  width="260" height = "150">
+           <h3>ScholarEd (2nd Place - 500$)</h3>
+        </div>
+      </div>
+      </div>
+       <div class="face face2">
+         <div class="content">
+          <h3></h3> <p> This study application enables students to get YouTube videos, Articles, WikiPedia pages and, Publications relevant to their input study material </p>
           
-            <br>
-           <img src="images/xflr5gif.gif" target="_blank" alt=""  width="260" height = "170">
-            <h3> </h3>
-            
-          
-          </div>
+          <a href="https://github.com/rishabh9898/HYL2022" target="_blank"type="button" >Read More</a>
          </div>
-        </div>
-        <div class="face face2">
-          <div class="content">
-            <h3></h3> <p> Python based automation script to automate and optimize all the fundamental features of XFLR5 (Aerodynamics Simulation Software).</p> 
-            <a href="#" type="button" >Read More </a> 
-            
-          </div>
-        </div>
-     </div>
-     
+       </div>
+    </div>
+
      <div class="card">
        <div class="face face1">
          <div class="second">
          <div class="content">
            <br>
-           <img src="images/app_analysis.jpg" alt="" width="260" height = "170">
-            <h3></h3>
+           <img src="images/app.gif" alt="" width="260" height = "150">
+            <h3>Appalytics</h3>
          </div>
        </div>
        </div>
@@ -471,11 +335,55 @@
           <div class="content">
            <h3></h3> <p>This Advanced Analytics based application, Web scrapes (BS4), Sentiment analyses (BERT), employs Topic Modelling (LDA) and visualizes
             the data on Android App Reviews</p>
-            <a href="https://github.com/zeeshansalim1234/App_Reviews_Analysis" target="_blank" type="button">Read More</a>
+            <a href="https://github.com/zeeshansalim1234/VTH-Hacks" target="_blank" type="button">Read More</a>
           </div>
         </div>
      </div>
-     
+
+
+    
+
+     <div class="card">
+      <div class="face face1" >
+        <div class="fifth">
+        <div class="content">
+        
+          <br>
+         <img src="images/xflr5gif.gif" target="_blank" alt=""  width="260" height = "150">
+         <h3>XFLR5 Automation</h3>
+        
+        </div>
+       </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <h3></h3> <p> Python based automation script to automate and optimize all the fundamental features of XFLR5 (Aerodynamics Simulation Software).</p> 
+          <a href="#" type="button" >Read More </a> 
+          
+        </div>
+      </div>
+   </div>
+
+   <div class="card">
+    <div class="face face1">
+      <div class="fourth">
+      <div class="content">
+        <br>
+        <img src="images/healthify.gif" alt=""  width="260" height = "150">
+         <h3>Healthify</h3>
+      </div>
+    </div>
+    </div>
+     <div class="face face2">
+       <div class="content">
+        <h3></h3> <p>  Healthify promotes healthy lifestyle by allowing users to scan product barcodes to identify if the product is suitable for their personal diet</p>
+        
+        <a href="https://github.com/zeeshansalim1234/CalgaryHacks2022" target="_blank"type="button" >Read More</a>
+       </div>
+     </div>
+  </div>
+   
+   
      
   
      
@@ -484,8 +392,8 @@
          <div class="first">
          <div class="content">
            <br>
-           <img src="images/parkinglot.gif" alt=""  width="260" height = "170">
-            <h3></h3>
+           <img src="images/parkinglot.gif" alt=""  width="260" height = "150">
+            <h3>Parkinglot Simulator</h3>
          </div>
          </div>
        </div>
@@ -505,14 +413,14 @@
           <div class="third">
           <div class="content">
             <br>
-            <img src="images/supply.gif" alt=""  width="260" height = "170">
-             <h3></h3>
+            <img src="images/supply.gif" alt=""  width="260" height = "150">
+             <h3>Supply Chain Management System</h3>
           </div>
         </div>
         </div>
          <div class="face face2">
            <div class="content">
-            <h3></h3> <p> Supply Chain Management System built using Java which extracts data from a MySQL database to calculate cheapest combination of available inventory items that can be used to fill a specific order.</p>
+            <h3></h3> <p> System built using Java and MySQL to calculate cheapest combination of available inventory items that can be used to fill a specific order.</p>
             
             <a href="https://github.com/zeeshansalim1234/Supply-Chain-Management-System" target="_blank"type="button" >Read More</a>
            </div>
@@ -525,8 +433,8 @@
           <div class="fifth">
           <div class="content">
             <br>
-            <img src="images/sweseel.jpg" alt=""  width="260" height = "170">
-             <h3></h3>
+            <img src="images/sweseek.jpg" alt=""  width="260" height = "150">
+             <h3>SWE Seek</h3>
           </div>
         </div>
         </div>
@@ -553,7 +461,156 @@
 
     
 
+   <!--Achievements-->
 
+      <!-- AWARDS -->
+
+      <section id="portfolio" class="dark">
+        <header class="title">
+          <h2><span>Awards</span></h2>
+          <p>Some of my notable awards and honours recieved over the years</p>
+        </header>
+  
+        <div class="container-fluid">
+          <div class="row">
+            <ul id="filters" class="list-inline">
+              <li data-filter="all" class="filter">All</li>
+              <li data-filter=".branding" class="filter">Scholarship</li> 
+              <li data-filter=".graphic" class="filter">Academic</li> 
+              <li data-filter=".printing" class="filter">Competition</li> 
+            </ul>
+          </div>
+  
+          <div class="row">
+            <div class="container-portfolio">
+              <!-- PORTFOLIO OBJECT -->
+              <script type="text/javascript">
+              var portfolio = [
+                      {
+                        category : "branding",
+                        image : "images/scholar.PNG",
+                        title : "PURE Research Award",
+                        link : "#none",
+                        text : "$6000"
+                      },
+                      {
+                        category : "branding",
+                        image : "images/scholar.PNG",
+                        title : "Presidents Admission Award",
+                        link : "#none",
+                        text : "$5000"
+                      },
+                       {
+                        category : "branding",
+                        image : "images/scholar.PNG",
+                        title : "Jordie & Robert Jordan Award",
+                        link : "#none",
+                        text : "$6920"
+                      },
+                      {
+                        category : "branding",
+                        image : "images/scholar.PNG",
+                        title : "Tution Reinvestment Bursary",
+                        link : "#none",
+                        text : "$4500"
+                      },
+                      {
+                        category : "branding",
+                        image : "images/scholar.PNG",
+                        title : "Student Peer Assistance Bursary",
+                        link : "#none",
+                        text : "$1500"
+                      },
+                      {
+                        category : "printing",
+                        image : "images/hackathon.jpg",
+                        title : "",
+                        link : "#none",
+                        text : "1st place hackathon ($3000)"
+                      },
+                      {
+                        category : "graphic",
+                        image : "images/young.PNG",
+                        title : "",
+                        link : "#none",
+                        text : "95% in CBSE grade 12 Board exams"
+                      },
+                      {
+                        category : "printing",
+                        image : "images/technovanza.PNG",
+                        title : "",
+                        link : "#none",
+                        text : "1st Place Technovanza Robotics Competiton"
+                      },
+                      {
+                        category : "printing",
+                        image : "images/asia.PNG",
+                        title : "",
+                        link : "#none",
+                        text : "Qualified to national round in math olympiad"
+                      },
+                      {
+                        category : "printing",
+                        image : "images/maha.PNG",
+                        title : "",
+                        link : "#none",
+                        text : "1st Place Math Olympiad"
+                      },
+                      {
+                        category : "graphic",
+                        image : "images/top.PNG",
+                        title : "",
+                        link : "#none",
+                        text : "School Topper Grade 12"
+                      },
+                      {
+                        category : "graphic",
+                        image : "images/super.PNG",
+                        title : "",
+                        link : "#none",
+                        text : "grade 12 Comp Sci Subject topper (100/100)"
+                      },
+                      {
+                        category : "graphic",
+                        image : "images/grade10.PNG",
+                        title : "",
+                        link : "#none",
+                        text : "Grade 10 Regional Topper"
+                      },
+                      {
+                        category : "graphic",
+                        image : "images/board10.PNG",
+                        title : "",
+                        link : "#none",
+                        text : "10 CGPA in grade 10"
+                      },    
+                      {
+                        category : "graphic",
+                        image : "images/grade9.PNG",
+                        title : "",
+                        link : "#none",
+                        text : "Grade 9 School topper"
+                      },       
+                      {
+                        category : "graphic",
+                        image : "images/grade8.PNG",
+                        title : "",
+                        link : "#none",
+                        text : "Grade 8 School topper"
+                      },
+                    
+              
+                      
+                      
+                  ];
+              </script>
+            </div>
+            
+          </div>
+          <br><br><br><br><br><br>
+        </div>
+      </section>
+  
 
 
 
@@ -563,40 +620,6 @@
     
 	    <!-- SKILLS -->
 
-    <section id="info" class="dark">
-      <header class="title">
-        <h2><span>Skills</span></h2>
-        <p></p>
-      </header>
-
-      <div class="container experties">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="skill">
-              <ul class="skill-bar list-unstyled">
-                <li><span class="percentage" data-value="95%"></span><em>Python</em></li>
-                <li><span class="percentage" data-value="90%"></span><em>C/C++</em></li>
-                <li><span class="percentage" data-value="85%"></span><em>Java</em></li>
-                <li><span class="percentage" data-value="55%"></span><em>MySQL</em></li>
-                <li><span class="percentage" data-value="70%"></span><em>MIPS ASSEMBLY</em></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="skill">
-              <ul class="skill-bar list-unstyled">
-                <li><span class="percentage" data-value="80%"></span><em>HTML & CSS</em></li>
-                <li><span class="percentage" data-value="65%"></span><em>JavaScript</em></li>
-                <li><span class="percentage" data-value="85%"></span><em>Processing</em></li>
-                <li><span class="percentage" data-value="95%"></span><em>Leadership</em></li>
-                <li><span class="percentage" data-value="95%"></span><em>Time Management</em></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div> <!-- /.container -->
-    </section>	
 	
 
     <section class="separator blue">
@@ -608,7 +631,7 @@
                 <i class="fa fa-graduation-cap"></i>
               </div>
               <div class="counter-content">
-                <span class="value" data-from="0" data-to="3"></span>
+                <span class="value" data-from="0" data-to="4"></span>
                 <small>Program Year</small>
               </div>
             </div>
