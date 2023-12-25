@@ -802,5 +802,41 @@
     <script type="text/javascript" src="js/main.js">
 
     </script>
+
+
+      <!-- Modal Structure -->
+  <div id="gifModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="gifImage">
+    <div id="caption"></div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    var modal = document.getElementById("gifModal");
+    var modalImg = document.getElementById("gifImage");
+    var captionText = document.getElementById("caption");
+
+    var cards = document.getElementsByClassName("card");
+    for (var i = 0; i < cards.length; i++) {
+      cards[i].onclick = function() {
+        var img = this.querySelector("img");
+        modal.style.display = "flex"; // Change to flex to maintain the flexbox centering
+        modalImg.src = img.src;
+        captionText.innerHTML = img.alt;
+      }
+    }
+
+    modal.onclick = function(event) {
+      if (event.target === modal || event.target.className === "close") {
+        modal.style.display = "none";
+      }
+    }
+  });
+
+    </script>
+    
+    
+
 	</body>
 </html>
