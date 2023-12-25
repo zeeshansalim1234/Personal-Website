@@ -628,13 +628,15 @@ span.quot-name:before {
 #about .big-image {
   position: absolute;
   left: 0;
-  width: 95%;
-  height: 100%;
-  background-size: contain;
+  width: 95%; /* Adjust width as needed */
+  height: 100%; /* Height is set to 100%, adjust if necessary */
+  background-size: cover; /* Changed from 'contain' to 'cover' */
   background-repeat: no-repeat;
   background-position: center;
-  z-index: 1
+  border-radius: 50%; /* This makes the image oval */
+  z-index: 1;
 }
+
 
 .about-content {
   margin-bottom: 25px;
